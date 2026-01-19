@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Gw7-cJ-DAC">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mafia" translatesAutoresizingMaskIntoConstraints="NO" id="8nW-Ug-Kam">
+                                <rect key="frame" x="100" y="333" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="VI5-uh-1RN"/>
+                                    <constraint firstAttribute="width" constant="240" id="oMY-6W-FHQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloodline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzR-w3-unv">
+                                <rect key="frame" x="149.33333333333337" y="613.66666666666663" width="141.66666666666663" height="39.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gw7-cJ-DAC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B8q-wN-3If"/>
+                            <constraint firstItem="QzR-w3-unv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LNe-Yl-bXX"/>
+                            <constraint firstItem="8nW-Ug-Kam" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-25" id="ODu-3t-fyo" userLabel="mafia.centerY = centerY - 35"/>
+                            <constraint firstItem="8nW-Ug-Kam" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RI0-Qc-Vtn"/>
+                            <constraint firstItem="QzR-w3-unv" firstAttribute="bottom" secondItem="8nW-Ug-Kam" secondAttribute="bottom" constant="80" id="VLh-B8-Maj" userLabel="Mafia.top = mafia.bottom + 50"/>
+                            <constraint firstItem="Gw7-cJ-DAC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="jrT-QV-aeN"/>
+                            <constraint firstItem="Gw7-cJ-DAC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m8Z-Xm-iJR"/>
+                            <constraint firstAttribute="bottom" secondItem="Gw7-cJ-DAC" secondAttribute="bottom" id="yhR-Vs-8IF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="390"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="background" width="1680" height="1050"/>
+        <image name="mafia" width="432" height="483"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
